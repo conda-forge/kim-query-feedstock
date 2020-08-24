@@ -1,5 +1,5 @@
 {% set name = "kim-query" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b8fe405b3a5ac37db4d9c3febc71c316119b4aba9dc8e8d966100f9fa40dd537
+  sha256: 385e959bee1edbdad6391ec6372870cd68be13802793ee666dd004a8ea2d0644
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license: CDDL-1.0
   license_family: OTHER
   license_file: LICENSE.CDDL
-  summary: 'Helper routines for querying the OpenKIM database hosted at https://query.openkim.org'
+  summary: Helper routines for querying the OpenKIM database hosted at https://query.openkim.org
   description: |
     The Open Knowledgebase of Interatomic Models (OpenKIM) project is a
     framework designed to facilitate access to standardized implementations of
