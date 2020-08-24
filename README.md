@@ -5,7 +5,7 @@ Home: https://github.com/openkim/kim-query
 
 Package license: CDDL-1.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Helper routines for querying the OpenKIM database hosted at https://query.openkim.org
 
