@@ -1,5 +1,5 @@
 {% set name = "kim-query" %}
-{% set version = "1.1.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 385e959bee1edbdad6391ec6372870cd68be13802793ee666dd004a8ea2d0644
+  sha256: e8cf7147635984f37297765f69ccb77d7def7a8f41d1fbf5d8d2c8a94137a113
 
 build:
   noarch: python

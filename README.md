@@ -5,9 +5,11 @@ Home: https://github.com/openkim/kim-query
 
 Package license: CDDL-1.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/kim-query-feedstock/blob/master/LICENSE.txt)
 
 Summary: Helper routines for querying the OpenKIM database hosted at https://query.openkim.org
+
+Development: https://github.com/openkim/kim-query
 
 The Open Knowledgebase of Interatomic Models (OpenKIM) project is a
 framework designed to facilitate access to standardized implementations of
