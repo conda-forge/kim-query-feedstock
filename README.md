@@ -156,4 +156,5 @@ Feedstock Maintainers
 =====================
 
 * [@dskarls](https://github.com/dskarls/)
+* [@ilia-nikiforov-umn](https://github.com/ilia-nikiforov-umn/)
 
