@@ -1,23 +1,26 @@
 {% set name = "kim-query" %}
-{% set version = "3.0.0" %}
+{% set version = "4.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f02031dab5e1c872ade93f5b52257d7f6ce3de8107dd52ac73661b00d26297af
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 61f01e996b51cd2107690b247a6083f29e8621b920c99a5280f49bcae51a41d8
 
 build:
   noarch: python
-  number: 2 
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
+    - versioneer ==0.29
+    - setuptools
+    - requests
   run:
     - python >={{ python_min }}
     - requests
