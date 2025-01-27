@@ -20,6 +20,7 @@ requirements:
     - pip
     - versioneer ==0.29
     - setuptools
+    - requests
   run:
     - python >={{ python_min }}
     - requests
