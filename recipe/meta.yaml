@@ -18,6 +18,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - versioneer == 0.29
   run:
     - python >={{ python_min }}
     - requests
